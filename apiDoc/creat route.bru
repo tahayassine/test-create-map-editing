@@ -1,0 +1,29 @@
+meta {
+  name: creat route
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/routes
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "name": "Route 2",
+      "waypoints": [
+        {
+          "name": "point1",
+          "lat": 40.722776,
+          "lng": -74.025974
+        },
+        {
+          "name": "point2",
+          "lat": 34.052235,
+          "lng": -118.223683
+        }
+      ]
+  }
+}

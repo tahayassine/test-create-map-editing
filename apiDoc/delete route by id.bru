@@ -1,0 +1,15 @@
+meta {
+  name: delete route by id
+  type: http
+  seq: 7
+}
+
+delete {
+  url: http://localhost:3000/routes/{{id}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  id: cm1snjlgl0000az9c3zzgs26r
+}
